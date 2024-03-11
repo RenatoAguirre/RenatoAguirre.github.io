@@ -6,6 +6,8 @@ html {
 h1 {
   color: black;
   font-size: 2em;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 body tr:nth-child(odd) {
@@ -84,4 +86,10 @@ fieldset {
   border-radius: 4px;
   margin: 0;
   padding: 0.35em 0.625em 0.75em;
+}
+
+#year {
+  font-size: 0.8em;
+  color: #000;
+  font-weight: bold;
 }
