@@ -84,11 +84,19 @@ body tr:nth-child(odd) {
 fieldset {
   border: 1px solid #000;
   border-radius: 4px;
-  margin: 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
   padding: 0.35em 0.625em 0.75em;
 }
 
 #year {
+  font-size: 16;
+  color: #000;
+  font-weight: bold;
+  margin-left: 32px;
+}
+
+.legend {
   font-size: 16;
   color: #000;
   font-weight: bold;
