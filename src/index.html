@@ -1,64 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-  <title>My Personal page</title>
-</head>
-<body>
-  <section class="content">
-  <h1 id="Title" class="title">Renato Aguirre</h1>
-  <p id="Major">Ingeniería civil en Ciencias de la computación Universidad de los Andes</p>
-  <h2 id="year" class="title">2021</h2>
-  <a href="https://github.com/">github</a>
-  <p id="Summary">Estudiante de computacion con muchas ganas de aprender. Me gusta la musica, tocar guitarra y el gimnasio</p>
-  <table>
-    <tr>
-    <td>Python</td>
-    <td>Expert</td>
-    </tr>
-    <tr> 
-    <td>JavaScript</td>
-    <td>Basic</td>
-    </tr>
-    <tr>
-    <td>HTML/CSS</td>
-    <td>Basic</td>
-    </tr>
-    <tr>
-    <td>Git</td>
-    <td>Basic</td>
-    </tr>
-    <tr>
-    <td>Excel</td>
-    <td>Advance</td>
-    </tr>
-    <tr>
-    <td>SQL</td>
-    <td>Expert</td>
-    </tr>
-    <tr>
-    <td>Ruby</td>
-    <td>Basic</td>
-    </tr>
-    <tr>
-    <td>English</td>
-    <td>Advance</td>
-    </tr>
-    <tr>
-    <td>Spanish</td>
-    <td>Native</td>
-  </table>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>My Personal page</title>
+  </head>
+  <body>
+    <section class="content">
+      <fieldset id="head">
+        <h1 id="Title" class="title">Renato Aguirre</h1>
+        <p id="Major">
+          Ingeniería civil en Ciencias de la computación Universidad de los
+          Andes
+        </p>
+        <h2 id="year" class="title">2021</h2>
+        <p id="Summary">
+          Estudiante de computacion con muchas ganas de aprender. Me gusta la
+          musica, tocar guitarra y el gimnasio
+        </p>
+        <div clas="button div">
+          <a 
+            class="button-link"
+            role="button"
+            href="https://github.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+           <img id="github-logo" src="./assets/github-mark-white.png">
+           <a 
+            class="button-link"
+            role="button"
+            href="https://www.linkedin.com/in/renato-aguirre-5038b5293/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+           <img class="logo" id="linkedin-logo" src="./assets/linkedin-white.png">
+          </a>
+        </div>
+      </fieldset>
 
-  <div id="content"> 
-    <p>Texto insertado: <p id="text"></p></p>
-    <input type="text" placeholder="escribe aqui" id="input"><button id="button"> aprieta aquí para insertar tu texto</button>
-  </div>
-  </section>
-  <script src="index.js"></script>
-</body>
+      <table>
+        <tr>
+          <td>skill</td>
+          <td>level</td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>Expert</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Expert</td>
+        </tr>
+        <tr>
+          <td>HTML/CSS</td>
+          <td>Basic</td>
+        </tr>
+        <tr>
+          <td>Git</td>
+          <td>Basic</td>
+        </tr>
+        <tr>
+          <td>Excel</td>
+          <td>Advance</td>
+        </tr>
+        <tr>
+          <td>SQL</td>
+          <td>Expert</td>
+        </tr>
+        <tr>
+          <td>Ruby</td>
+          <td>Basic</td>
+        </tr>
+        <tr>
+          <td>English</td>
+          <td>Advance</td>
+        </tr>
+        <tr>
+          <td>Spanish</td>
+          <td>Native</td>
+        </tr>
+      </table>
+
+      <fieldset id="content">
+        <p>Texto insertado:</p>
+        <p id="text">
+          <input type="text" placeholder="escribe aqui" id="input" /><button class="button-link"
+          >
+            aprieta aquí para insertar tu texto
+          </button>
+        </p>
+      </fieldset>
+    </section>
+    <script src="index.js"></script>
+  </body>
 </html>
+
