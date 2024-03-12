@@ -1,16 +1,25 @@
+
 html {
   font-family: Oswald, sans-serif;
+}
+
+body {
   background-color: #F4F4F4;
+  --secondary-color: #F4F4F4;
+}
+
+.dark-mode {
+  background-color: #1b1b1b;
+  color: #F4F4F4;
+  --secondary-color: gray;
 }
 
 h2 {
-  color: black;
   margin-block-start: 0px;
   margin-block-end: 0px;
 }
 
 h4 {
-  color: black;
   margin-top: 50px;
   margin-block-start: 10px;
   margin-block-end: 0px;
@@ -18,7 +27,6 @@ h4 {
 }
 
 #location {
-  color: black;
   margin-block-start: 5px;
   margin-block-end: 0px;
   font-weight: normal;
@@ -83,9 +91,9 @@ body tr:nth-child(odd) {
   appearance: button;
   background-color: #000;
   background-image: none;
-  border: 1px solid #000;
+  border: 1px solid;
   border-radius: 4px;
-  box-shadow: #F4F4F4 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-shadow: var(--secondary-color) 4px 4px 0 0,#000 4px 4px 0 1px;
   box-sizing: border-box;
   color: #F4F4F4;
   cursor: pointer;
@@ -135,7 +143,7 @@ body tr:nth-child(odd) {
 }
 
 fieldset {
-  border: 1px solid #000;
+  border: 1px solid;
   border-radius: 4px;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -144,7 +152,6 @@ fieldset {
 
 legend {
   font-size: 16;
-  color: #000;
   font-weight: bolder;
   margin-left: 32px;
 }
@@ -152,7 +159,7 @@ legend {
 table {
   border-collapse: collapse;
   width: 100%;
-  border: 1px solid #000;
+  border: 1px solid;
   border-radius: 4px;
 }
 
@@ -170,7 +177,7 @@ table {
   font-size: 17px;
   position: relative;
   float: right;
-  margin-top: 10px;
+  margin-top: 8px;
   width: 40px;
   height: 20px;
   border: #000;
@@ -209,13 +216,12 @@ table {
 }
 
 .switch input:checked + .slider:before {
-  background-color: black;
+  background-color: white;
   border-radius: 20px;
-  box-shadow: inset 5px 0px 1px 0px white;
 }
 
 .switch input:checked + .slider {
-  background-color: black;
+  background-color: var(--secondary-color);
 }
 
 .switch input:focus + .slider {

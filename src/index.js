@@ -6,3 +6,12 @@ button.addEventListener("click", function() {
   container.textContent = input.value;
   container.appendChild(texto)
 });
+
+function toggleDarkMode() {
+  const body = document.body;
+ body.classList.toggle("dark-mode");
+}
+
+const toggle = document.querySelector("#toggle");
+
+toggle.addEventListener("click", toggleDarkMode);
