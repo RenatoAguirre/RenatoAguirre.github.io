@@ -54,6 +54,17 @@ body tr:nth-child(odd) {
   left: 200px;
 }
 /* logos */
+
+.logo {
+  /* default */
+  width: 20px;
+  height: 20px;
+  object-fit:cover;
+  object-position:50% 50%;
+  position: relative;
+  padding: 8px 8px 8px 8px;
+}
+
 #github-logo {
   width: 20px;
   height: 20px;
@@ -136,4 +147,16 @@ legend {
   color: #000;
   font-weight: bolder;
   margin-left: 32px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.firstReg {
+  font-weight: bold;
+  font-size: 20;
 }
