@@ -8,6 +8,7 @@ h2 {
   margin-block-start: 0px;
   margin-block-end: 0px;
 }
+
 h4 {
   color: black;
   margin-top: 50px;
@@ -43,6 +44,15 @@ body tr:nth-child(odd) {
   margin: auto;
 }
 
+#myPic {
+  border-radius: 25%;
+  width:120px;
+  height:120px;
+  object-fit:cover;
+  object-position:90% 10%;
+  position: relative;
+  left: 200px;
+}
 /* logos */
 #github-logo {
   width: 20px;
@@ -52,8 +62,12 @@ body tr:nth-child(odd) {
   width: 20px;
   height: 20px;
 }
-/* Button */
+#mail-logo {
+  width: 20px;
+  height: 20px;
+}
 
+/* Button */
 .button-link {
   appearance: button;
   background-color: #000;
@@ -78,8 +92,9 @@ body tr:nth-child(odd) {
   vertical-align: middle;
   white-space: nowrap;
   text-decoration: none;
-  margin-right: 16px;
-  margin-top: 16px;
+  margin-right: 4px;
+  margin-left: 4px;
+  margin-top: 10px;
 }
 
 .button-link:focus {
@@ -88,6 +103,8 @@ body tr:nth-child(odd) {
 
 .button-link:hover {
   text-decoration: none;
+  box-shadow: #F4F4F4 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
 }
 
 .button-link:active {
