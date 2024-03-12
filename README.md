@@ -1,1 +1,1 @@
-Lab 1 web technologies
+https://renatoaguirre.github.io/
