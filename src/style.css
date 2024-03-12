@@ -5,13 +5,16 @@ html {
 
 body {
   background-color: #F4F4F4;
+  color: #1b1b1b;
   --secondary-color: #F4F4F4;
+  --third-color: black;
 }
 
 .dark-mode {
   background-color: #1b1b1b;
   color: #F4F4F4;
   --secondary-color: gray;
+  --third-color: #F4F4F4;
 }
 
 h2 {
@@ -230,4 +233,16 @@ table {
 
 .switch input:checked + .slider:before {
   transform: translateX(20px);
+}
+
+.textbox {
+  border-radius: 4px;
+  border: 1px solid;
+  background-color: var(--secondary-color);
+}
+
+::placeholder {
+  color: var(--third-color);
+  opacity: 1;
+  font-family: Oswald, sans-serif;
 }
