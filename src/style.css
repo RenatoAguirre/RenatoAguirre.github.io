@@ -5,13 +5,13 @@ html {
 
 body {
   background-color: #F4F4F4;
-  color: #1b1b1b;
+  color: #201F1D;
   --secondary-color: #F4F4F4;
   --third-color: black;
 }
 
 .dark-mode {
-  background-color: #1b1b1b;
+  background-color: #201F1D;
   color: #F4F4F4;
   --secondary-color: gray;
   --third-color: #F4F4F4;
