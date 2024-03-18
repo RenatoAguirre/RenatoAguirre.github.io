@@ -4,20 +4,20 @@ html {
 
 body {
   font-family: Oswald, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #EDEDED;
   color: #201f1d;
-  --primary-color: #f4f4f4;
-  --secondary-color: #f4f4f4;
+  --primary-color: #EDEDED;
+  --secondary-color: #EDEDED;
   --third-color: black;
 }
 
 .dark-mode {
   font-family: Oswald;
   background-color: #201f1d;
-  color: #f4f4f4;
+  color: #EDEDED;
   --primary-color: #201f1d;
   --secondary-color: gray;
-  --third-color: #f4f4f4;
+  --third-color: #EDEDED;
 }
 
 .container {
