@@ -26,14 +26,6 @@ body {
   overflow: hidden;
 }
 
-fieldset {
-  border: 1px solid;
-  border-radius: 4px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding: 0.35em 0.625em 0.75em;
-}
-
 legend {
   font-family: Oswald, sans-serif;
   display: block;
@@ -208,8 +200,8 @@ fieldset {
   font-family: Oswald, sans-serif;
   border: 1px solid;
   border-radius: 4px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   padding: 0.35em 0.625em 0.75em;
 }
 
