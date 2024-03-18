@@ -19,6 +19,12 @@ body {
   --third-color: #F4F4F4;
 }
 
+.container {
+  max-width: 500px;
+  margin: auto;
+  overflow: hidden;
+}
+
 fieldset {
   border: 1px solid;
   border-radius: 4px;
@@ -88,10 +94,7 @@ body tr:nth-child(odd) {
   background-color: #A2A2A2;
 }
 
-.content {
-  max-width: 500px;
-  margin: auto;
-}
+
 
 #myPic {
   border-radius: 25%;
