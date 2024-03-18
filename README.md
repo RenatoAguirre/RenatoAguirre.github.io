@@ -13,8 +13,10 @@ Done in **html**, **css** and **vanilla js**
 
 | -Container :white_check_mark: |
 
-| -Columns component for technologies  :white_check_mark:  |
+| -Columns component :white_check_mark:  |
 
+### Components
 
+| -List group for technologies  :white_check_mark:  |
 
 
