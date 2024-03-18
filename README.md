@@ -7,3 +7,14 @@ Done in **html**, **css** and **vanilla js**
 | https://renatoaguirre.github.io/  |
 |:----------------------------------|
 
+
+
+## Layout and styles
+
+| -Container :white_check_mark: |
+
+| -Columns component for technologies  :white_check_mark:  |
+
+
+
+
