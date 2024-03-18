@@ -4,6 +4,7 @@ html {
 }
 
 body {
+  font-family: Oswald, sans-serif;
   background-color: #F4F4F4;
   color: #201F1D;
   --secondary-color: #F4F4F4;
@@ -11,22 +12,58 @@ body {
 }
 
 .dark-mode {
+  font-family: Oswald;
   background-color: #201F1D;
   color: #F4F4F4;
   --secondary-color: gray;
   --third-color: #F4F4F4;
 }
 
+fieldset {
+  border: 1px solid;
+  border-radius: 4px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+    font-family: Oswald, sans-serif;
+    display: block;
+    padding-inline-start: 2px;
+    padding-inline-end: 2px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    width: auto;
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
 h2 {
+  font-family: Oswald, sans-serif;
   margin-block-start: 0px;
   margin-block-end: 0px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: normal;
 }
 
 h4 {
+  font-family: Oswald;
   margin-top: 50px;
   margin-block-start: 10px;
   margin-block-end: 0px;
   font-weight: normal;
+  font-size: 1rem;
+  line-height: normal;
+}
+input {
+  margin: 0;
+  font-family: inherit;
+  font-size: 1rem; 
+  line-height: 1rem;
 }
 
 #location {
@@ -37,6 +74,7 @@ h4 {
 }
 
 p {
+  font-family: Oswald, sans-serif;
   display: block;
   margin-block-start: 0px;
   margin-block-end: 0px;
@@ -74,6 +112,7 @@ body tr:nth-child(odd) {
   object-position:50% 50%;
   position: relative;
   padding: 8px 8px 8px 8px;
+  box-sizing: content-box;
 }
 
 #github-logo {
@@ -101,7 +140,7 @@ body tr:nth-child(odd) {
   color: #F4F4F4;
   cursor: pointer;
   display: inline-block;
-  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+  font-family: Oswald, sans-serif;
   font-size: 10px;
   font-weight: 400;
   margin: 0 5px 10px 0;
@@ -146,6 +185,7 @@ body tr:nth-child(odd) {
 }
 
 fieldset {
+  font-family: Oswald, sans-serif;
   border: 1px solid;
   border-radius: 4px;
   margin-top: 50px;
@@ -154,6 +194,7 @@ fieldset {
 }
 
 legend {
+  font-family: Oswald, sans-serif;
   font-size: 16;
   font-weight: bolder;
   margin-left: 32px;
