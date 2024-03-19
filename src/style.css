@@ -4,23 +4,23 @@ html {
 
 body {
   font-family: Oswald, sans-serif;
-  background-color: #EDEDED;
+  background-color: #ededed;
   color: #201f1d;
-  --primary-color: #EDEDED;
-  --secondary-color: #EDEDED;
+  --primary-color: #ededed;
+  --secondary-color: #ededed;
   --third-color: black;
   --inverse-color: #201f1d;
-  --gray: #D3D3D3;
+  --gray: #d3d3d3;
 }
 
 .dark-mode {
   font-family: Oswald;
   background-color: #201f1d;
-  color: #EDEDED;
+  color: #ededed;
   --primary-color: #201f1d;
   --secondary-color: gray;
-  --third-color: #EDEDED;
-  --inverse-color: #EDEDED;
+  --third-color: #ededed;
+  --inverse-color: #ededed;
   --gray: gray;
 }
 
@@ -103,7 +103,7 @@ p {
   display: block;
   padding: 0.75rem 1.25rem;
   margin-bottom: -1px;
-  background-color: #a2a2a2;;
+  background-color: #a2a2a2;
   border: 1px solid var(--third-color);
 }
 
@@ -218,7 +218,7 @@ body tr:nth-child(odd) {
   font-size: 0.4rem;
   z-index: 1;
   color: var(--inverse-color);
-  background-color: var(--gray) ;
+  background-color: var(--gray);
   border: 1px solid var(--inverse-color);
   border-radius: 4px;
   box-shadow: var(--inverse-color) 1px 1px 0 0, var(--inverse-color) 1px 0 1px;
@@ -227,12 +227,13 @@ body tr:nth-child(odd) {
   padding: 10px 10px 10px 10px;
   font-weight: 400;
   max-width: 130px;
+  white-space: nowrap;
 }
 
 #job-mode {
   font-family: Oswald, sans-serif;
 
-  background-color: var(--gray) ;
+  background-color: var(--gray);
 }
 
 fieldset {
@@ -255,7 +256,6 @@ fieldset {
 #work-experience {
   font-family: Oswald, sans-serif;
   margin-bottom: 25px;
-
 }
 
 #date-holder {
@@ -288,7 +288,6 @@ fieldset {
   margin-left: 10px;
   margin-top: 4px;
 }
-
 
 legend {
   font-family: Oswald, sans-serif;
@@ -380,5 +379,9 @@ table {
 ::placeholder {
   color: var(--third-color);
   opacity: 1;
+  font-family: Oswald, sans-serif;
+}
+
+.custom-tooltip {
   font-family: Oswald, sans-serif;
 }
