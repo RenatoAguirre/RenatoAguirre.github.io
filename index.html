@@ -2,7 +2,7 @@
 <html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="./src/style.css" />
     <link rel="icon" type="image/x-icon" href="./assets/z.png" />
     <title>RenatoAguirre</title>
   </head>
@@ -74,6 +74,97 @@
         </p>
       </fieldset>
 
+      <fieldset id="experience-fieldset">
+        <legend>Experience</legend>
+        <ul class="list-group list-group-horizontal" id="work-experience">
+          <li class="list-group-item" id="date-holder">
+            <span class="badge text-bg-secondary" id="job-date"
+              >mar 2024</span
+            >
+          </li>
+          <li class="list-group-item d-flex">
+            <img class="work-logo" src="./assets/excellerateco_logo.png" />
+            <div class="job-text-container">
+              <div class="job-title">
+                Junior Software Developer - eXcellerate
+                <span class="badge text-bg-secondary" id="job-mode"> remote</span>
+              </div>
+              <p class="job-desc">
+                Maintained a web application
+              </p>
+            </div>
+          </li>
+          
+        </ul>
+        <ul class="list-group list-group-horizontal" id="work-experience">
+          <li class="list-group-item" id="date-holder">
+            <span class="badge text-bg-secondary" id="job-date"
+              >dec 2023</span
+            >
+          </li>
+          <li class="list-group-item d-flex">
+            <img class="work-logo" src="./assets/excellerateco_logo.png" />
+            <div class="job-text-container">
+              <div class="job-title">
+                Junior Software Developer - eXcellerate
+                <span class="badge text-bg-secondary" id="job-mode"> in person</span>
+                <span class="badge text-bg-secondary" id="job-mode"> internship</span>
+              </div>
+              <p class="job-desc">
+                Developed and designed a backend web application
+              </p>
+            </div>
+          </li>
+          
+        </ul>
+      </fieldset>
+
+      <fieldset id="technologies">
+        <legend>Technologies</legend>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <div class="row align-items-center">
+              <div class="col">JavaScript</div>
+              <div class="col">
+                <img class="logo" src="./assets/JavaScript-logo.png" />
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item-even">
+            <div class="row align-items-center">
+              <div class="col">Python</div>
+              <div class="col">
+                <img class="logo" src="./assets/py.png" />
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row align-items-center">
+              <div class="col">HTML/CSS</div>
+              <div class="col">
+                <img class="logo" src="./assets/htmlcss.png" />
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item-even">
+            <div class="row align-items-center">
+              <div class="col">Git</div>
+              <div class="col">
+                <img class="logo" src="./assets/Git-Icon-White.png" />
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row align-items-center">
+              <div class="col">c</div>
+              <div class="col">
+                <img class="logo" src="./assets/C_Logo.png" />
+              </div>
+            </div>
+          </li>
+        </ul>
+      </fieldset>
+
       <fieldset id="insert">
         <legend class="legend">Change text</legend>
         <p id="textToReplace">Change me!</p>
@@ -88,62 +179,6 @@
           </button>
         </p>
       </fieldset>
-
-      <fieldset id="Technologies">
-        <legend>Technologies</legend>
-        <ul class="list-group">
-          <li class="list-group-item"> 
-            <div class="row align-items-center">
-              <div class="col">
-                JavaScript
-              </div>
-              <div class="col">
-                <img class="logo" src="./assets/JavaScript-logo.png" />
-              </div>
-          </li>
-          <li class="list-group-item-even"> 
-            <div class="row align-items-center">
-              <div class="col">
-                Python
-              </div>
-              <div class="col">
-                <img class="logo" src="./assets/py.png" />
-              </div>
-            </div>
-          </li>
-          <li class="list-group-item"> 
-            <div class="row align-items-center">
-              <div class="col">
-                HTML/CSS
-              </div>
-              <div class="col">
-                <img class="logo" src="./assets/htmlcss.png" />
-              </div>
-            </div>
-          </li>
-          <li class="list-group-item-even"> 
-            <div class="row align-items-center">
-              <div class="col">
-                Git
-              </div>
-              <div class="col">
-                <img class="logo" src="./assets/Git-Icon-White.png" />
-              </div>
-            </div>
-          </li>
-          <li class="list-group-item">
-            <div class="row align-items-center">
-              <div class="col">
-                c
-              </div>
-              <div class="col">
-                <img class="logo" src="./assets/C_Logo.png" />
-              </div>
-            </div>
-          </li>
-        </ul>
-      </fieldset>
-      
     </div>
     <script src="./src/index.js"></script>
   </body>

@@ -4,34 +4,30 @@ html {
 
 body {
   font-family: Oswald, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #EDEDED;
   color: #201f1d;
-  --primary-color: #f4f4f4;
-  --secondary-color: #f4f4f4;
+  --primary-color: #EDEDED;
+  --secondary-color: #EDEDED;
   --third-color: black;
+  --inverse-color: #201f1d;
+  --gray: #D3D3D3;
 }
 
 .dark-mode {
   font-family: Oswald;
   background-color: #201f1d;
-  color: #f4f4f4;
+  color: #EDEDED;
   --primary-color: #201f1d;
   --secondary-color: gray;
-  --third-color: #f4f4f4;
+  --third-color: #EDEDED;
+  --inverse-color: #EDEDED;
+  --gray: gray;
 }
 
 .container {
   max-width: 500px;
   margin: auto;
   overflow: hidden;
-}
-
-fieldset {
-  border: 1px solid;
-  border-radius: 4px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding: 0.35em 0.625em 0.75em;
 }
 
 legend {
@@ -100,7 +96,9 @@ p {
   background-color: var(--primary-color);
   border: 1px solid var(--third-color);
 }
+
 .list-group-item-even {
+  /*for weird bug with border radius */
   position: relative;
   display: block;
   padding: 0.75rem 1.25rem;
@@ -109,19 +107,19 @@ p {
   border: 1px solid var(--third-color);
 }
 
+.list-group-horizontal .list-group-item:last-child {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  border-top-left-radius: 0.25rem;
+  margin-left: -30px;
+  box-shadow: var(--inverse-color) 1px 1px 0 0, var(--inverse-color) 1px 1px;
+}
+
 body tr:nth-child(odd) {
   background-color: #a2a2a2;
 }
 
-#myPic {
-  border-radius: 25%;
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  object-position: 90% 10%;
-  position: relative;
-  left: 200px;
-}
 /* logos */
 
 .logo {
@@ -133,6 +131,17 @@ body tr:nth-child(odd) {
   position: relative;
   padding: 8px 8px 8px 8px;
   box-sizing: content-box;
+}
+
+.work-logo {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  position: relative;
+  padding: 8px 8px 8px 8px;
+  box-sizing: content-box;
+  margin-left: -15px;
 }
 
 #github-logo {
@@ -151,11 +160,11 @@ body tr:nth-child(odd) {
 /* Button */
 .button-link {
   appearance: button;
-  background-color: #000;
+  background-color: #201f1d;
   background-image: none;
   border: 1px solid;
   border-radius: 4px;
-  box-shadow: var(--secondary-color) 4px 4px 0 0, #000 4px 4px 0 1px;
+  box-shadow: var(--secondary-color) 4px 4px 0 0, #201f1d 4px 4px 0 1px;
   box-sizing: border-box;
   color: #f4f4f4;
   cursor: pointer;
@@ -184,7 +193,7 @@ body tr:nth-child(odd) {
 
 .button-link:hover {
   text-decoration: none;
-  box-shadow: #f4f4f4 2px 2px 0 0, #000 2px 2px 0 1px;
+  box-shadow: #f4f4f4 2px 2px 0 0, #201f1d 2px 2px 0 1px;
   transform: translate(2px, 2px);
 }
 
@@ -194,7 +203,7 @@ body tr:nth-child(odd) {
 }
 
 .button-link:not([disabled]):active {
-  box-shadow: #f4f4f4 2px 2px 0 0, #000 2px 2px 0 1px;
+  box-shadow: #f4f4f4 2px 2px 0 0, #201f1d 2px 2px 0 1px;
   transform: translate(2px, 2px);
 }
 
@@ -204,14 +213,82 @@ body tr:nth-child(odd) {
   }
 }
 
+#job-date {
+  font-family: Oswald, sans-serif;
+  font-size: 0.4rem;
+  z-index: 1;
+  color: var(--inverse-color);
+  background-color: var(--gray) ;
+  border: 1px solid var(--inverse-color);
+  border-radius: 4px;
+  box-shadow: var(--inverse-color) 1px 1px 0 0, var(--inverse-color) 1px 0 1px;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 10px 10px 10px 10px;
+  font-weight: 400;
+  max-width: 130px;
+}
+
+#job-mode {
+  font-family: Oswald, sans-serif;
+
+  background-color: var(--gray) ;
+}
+
 fieldset {
   font-family: Oswald, sans-serif;
   border: 1px solid;
   border-radius: 4px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   padding: 0.35em 0.625em 0.75em;
 }
+
+#experience-fieldset {
+  font-family: Oswald, sans-serif;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 25px;
+}
+
+#work-experience {
+  font-family: Oswald, sans-serif;
+  margin-bottom: 25px;
+
+}
+
+#date-holder {
+  border: 0px solid;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -10px;
+}
+
+.job-title {
+  font-family: Oswald, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+
+.job-desc {
+  font-family: Oswald, sans-serif;
+  font-size: 0.8rem;
+  margin-top: -5px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+
+.job-text-container {
+  margin-left: 10px;
+  margin-top: 4px;
+}
+
 
 legend {
   font-family: Oswald, sans-serif;
