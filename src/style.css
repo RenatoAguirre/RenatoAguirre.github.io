@@ -10,6 +10,7 @@ body {
   --secondary-color: #EDEDED;
   --third-color: black;
   --inverse-color: #201f1d;
+  --gray: #D3D3D3;
 }
 
 .dark-mode {
@@ -20,6 +21,7 @@ body {
   --secondary-color: gray;
   --third-color: #EDEDED;
   --inverse-color: #EDEDED;
+  --gray: gray;
 }
 
 .container {
@@ -213,12 +215,11 @@ body tr:nth-child(odd) {
   font-family: Oswald, sans-serif;
   font-size: 0.8rem;
   z-index: 1;
-  color: #201f1d;
-  background-color: #D3D3D3 ;
-  border: 1px solid;
+  color: var(--inverse-color);
+  background-color: var(--gray) ;
+  border: 1px solid var(--inverse-color);
   border-radius: 4px;
-  
-  box-shadow: #201f1d 1px 1px 0 0, #201f1d 1px 1px 0 1px;
+  box-shadow: var(--inverse-color) 1px 1px 0 0, var(--inverse-color) 1px 0 1px;
   box-sizing: border-box;
   font-size: 14px;
   padding: 10px 10px 10px 10px;
@@ -227,7 +228,8 @@ body tr:nth-child(odd) {
 
 #job-mode {
   font-family: Oswald, sans-serif;
-  background-color: #D3D3D3 ;
+
+  background-color: var(--gray) ;
 }
 
 fieldset {
