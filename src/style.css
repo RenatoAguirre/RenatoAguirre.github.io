@@ -131,6 +131,7 @@ body tr:nth-child(odd) {
   padding: 8px 8px 8px 8px;
   box-sizing: content-box;
 }
+
 .work-logo {
   width: 75px;
   height: 75px;
@@ -213,7 +214,7 @@ body tr:nth-child(odd) {
 
 #job-date {
   font-family: Oswald, sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.4rem;
   z-index: 1;
   color: var(--inverse-color);
   background-color: var(--gray) ;
@@ -224,6 +225,7 @@ body tr:nth-child(odd) {
   font-size: 14px;
   padding: 10px 10px 10px 10px;
   font-weight: 400;
+  max-width: 130px;
 }
 
 #job-mode {
@@ -244,13 +246,14 @@ fieldset {
 #experience-fieldset {
   font-family: Oswald, sans-serif;
   padding-top: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 25px;
 }
 
 #work-experience {
   font-family: Oswald, sans-serif;
+  margin-bottom: 25px;
 }
 
 #date-holder {
