@@ -17,6 +17,6 @@ Done in **html**, **css** and **vanilla js**
 
 ### Components
 
-| -List group for technologies  :white_check_mark:  |
-
+| -List group for technologies                :white_check_mark: |
+| -list group and badges for work experience  :white_check_mark: |
 
