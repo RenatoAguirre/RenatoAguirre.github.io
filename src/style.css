@@ -4,23 +4,23 @@ html {
 
 body {
   font-family: Oswald, sans-serif;
-  background-color: #EDEDED;
+  background-color: #ededed;
   color: #201f1d;
-  --primary-color: #EDEDED;
-  --secondary-color: #EDEDED;
+  --primary-color: #ededed;
+  --secondary-color: #ededed;
   --third-color: black;
   --inverse-color: #201f1d;
-  --gray: #D3D3D3;
+  --gray: #d3d3d3;
 }
 
 .dark-mode {
   font-family: Oswald;
   background-color: #201f1d;
-  color: #EDEDED;
+  color: #ededed;
   --primary-color: #201f1d;
   --secondary-color: gray;
-  --third-color: #EDEDED;
-  --inverse-color: #EDEDED;
+  --third-color: #ededed;
+  --inverse-color: #ededed;
   --gray: gray;
 }
 
@@ -103,7 +103,7 @@ p {
   display: block;
   padding: 0.75rem 1.25rem;
   margin-bottom: -1px;
-  background-color: #a2a2a2;;
+  background-color: #a2a2a2;
   border: 1px solid var(--third-color);
 }
 
@@ -218,7 +218,7 @@ body tr:nth-child(odd) {
   font-size: 0.4rem;
   z-index: 1;
   color: var(--inverse-color);
-  background-color: var(--gray) ;
+  background-color: var(--gray);
   border: 1px solid var(--inverse-color);
   border-radius: 4px;
   box-shadow: var(--inverse-color) 1px 1px 0 0, var(--inverse-color) 1px 0 1px;
@@ -227,12 +227,13 @@ body tr:nth-child(odd) {
   padding: 10px 10px 10px 10px;
   font-weight: 400;
   max-width: 130px;
+  white-space: nowrap;
 }
 
 #job-mode {
   font-family: Oswald, sans-serif;
-
-  background-color: var(--gray) ;
+  background-color: var(--gray);
+  font-size: 10px;
 }
 
 fieldset {
@@ -255,7 +256,6 @@ fieldset {
 #work-experience {
   font-family: Oswald, sans-serif;
   margin-bottom: 25px;
-
 }
 
 #date-holder {
@@ -288,7 +288,6 @@ fieldset {
   margin-left: 10px;
   margin-top: 4px;
 }
-
 
 legend {
   font-family: Oswald, sans-serif;
@@ -381,4 +380,89 @@ table {
   color: var(--third-color);
   opacity: 1;
   font-family: Oswald, sans-serif;
+}
+
+.custom-tooltip {
+  font-family: Oswald, sans-serif;
+}
+
+.project-col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+/* Project Card */
+.card-text {
+  font-family: Oswald, sans-serif;
+  font-size: 0.8rem;
+  margin-top: -5px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-family: Oswald, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1rem;
+  text-align: left;
+  height: 200px;
+}
+
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: var(--primary-color);
+  background-clip: border-box;
+  border: 1px solid;
+  border-radius: 0.25rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 5px; /* for alignment*/
+  max-width: 100%;
+  box-shadow: var(--inverse-color) 1px 1px 0 0, var(--inverse-color) 1px 1px;
+}
+
+#project-badge {
+  font-family: Oswald, sans-serif;
+  background-color: var(--gray);
+  margin-bottom: 0;
+  font-size: 10px;
+}
+
+.badge-container {
+  margin-top: auto;
+  margin-bottom: 0rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+#card-title-span {
+  color: rgb(0, 188, 47);
+  animation-name: flicker;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+a {
+  color: var(--inverse-color);
+  text-decoration: none;
 }

@@ -78,7 +78,12 @@
         <legend>Experience</legend>
         <ul class="list-group list-group-horizontal" id="work-experience">
           <li class="list-group-item" id="date-holder">
-            <span class="badge text-bg-secondary" id="job-date"
+            <span
+              class="badge text-bg-secondary"
+              id="job-date"
+              data-bs-toggle="tooltip"
+              data-bs-custom-class="custom-tooltip"
+              data-bs-title="mar 2024 - present"
               >mar 2024</span
             >
           </li>
@@ -87,18 +92,22 @@
             <div class="job-text-container">
               <div class="job-title">
                 Junior Software Developer - eXcellerate
-                <span class="badge text-bg-secondary" id="job-mode"> remote</span>
+                <span class="badge text-bg-secondary" id="job-mode">
+                  remote</span
+                >
               </div>
-              <p class="job-desc">
-                Maintained a web application
-              </p>
+              <p class="job-desc">Maintained a web application</p>
             </div>
           </li>
-          
         </ul>
         <ul class="list-group list-group-horizontal" id="work-experience">
           <li class="list-group-item" id="date-holder">
-            <span class="badge text-bg-secondary" id="job-date"
+            <span
+              class="badge text-bg-secondary"
+              id="job-date"
+              data-bs-toggle="tooltip"
+              data-bs-custom-class="custom-tooltip"
+              data-bs-title="dec 2023 - mar 2024"
               >dec 2023</span
             >
           </li>
@@ -107,16 +116,75 @@
             <div class="job-text-container">
               <div class="job-title">
                 Junior Software Developer - eXcellerate
-                <span class="badge text-bg-secondary" id="job-mode"> in person</span>
-                <span class="badge text-bg-secondary" id="job-mode"> internship</span>
+                <span class="badge text-bg-secondary" id="job-mode">
+                  in person</span
+                >
+                <span class="badge text-bg-secondary" id="job-mode">
+                  internship</span
+                >
               </div>
               <p class="job-desc">
                 Developed and designed a backend web application
               </p>
             </div>
           </li>
-          
         </ul>
+      </fieldset>
+
+      <fieldset id="projects">
+        <legend>Featured Projects</legend>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <div class="card" style="width: 185px;">
+                <div class="card-body">
+                  <h5 class="card-title">Crypto Pricer api <span id="card-title-span">•</span></h5>
+                  <p class="card-text">An api that works by scraping the web for cryptocurrency prices.</p>
+                  <div class="badge-container">
+                    <span class="badge text-bg-secondary" id="project-badge"><a
+                      href="https://github.com/RenatoAguirre/crypto_pricer_api"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >Github</a></span> <br>
+                    <span class="badge text-bg-secondary" id="project-badge">Nodejs</span> <br>
+                    <span class="badge text-bg-secondary" id="project-badge">Backend</span> <br>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 185px;">
+                <div class="card-body">
+                  <h5 class="card-title">Volumer <span id="card-title-span">•</span></h5>
+                  <p class="card-text">A chrome extension to manage volume between tabs.</p>
+                  <div class="badge-container">
+                    <span class="badge text-bg-secondary" id="project-badge"><a
+                      href="https://github.com/RenatoAguirre/Volumer"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >Github</a></span> <br>
+                    <span class="badge text-bg-secondary" id="project-badge">JavaScript & TypeScript</span> <br>
+                    <span class="badge text-bg-secondary" id="project-badge">In progress</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="card" style="width: 185px;">
+                <div class="card-body">
+                  <h5 class="card-title">Music Bot</h5>
+                  <p class="card-text">A discord bot that plays music in your voice channel</p>
+                  <div class="badge-container">
+                    <span class="badge text-bg-secondary" id="project-badge">Python</span> <br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </fieldset>
 
       <fieldset id="technologies">
@@ -180,6 +248,12 @@
         </p>
       </fieldset>
     </div>
-    <script src="./src/index.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./src/index.js" type="module"></script>
   </body>
 </html>
