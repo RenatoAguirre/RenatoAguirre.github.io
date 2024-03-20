@@ -19,5 +19,6 @@ Done in **html**, **css** and **vanilla js**
 
 | -List group for technologies                :white_check_mark: |
 
-| -list group, badges and tooltips for work experience  :white_check_mark: |
+| -List group, badges & tooltips for work experience  :white_check_mark: |
 
+| -Grid system, Cards & badges forfeatured projects  :white_check_mark: |
